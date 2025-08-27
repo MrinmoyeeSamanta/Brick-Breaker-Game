@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Brick Breaker Game</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel">
+      <div class="game">
+        <h1>Brick Breaker Game</h1>
+        <p class="small">Arrow keys / A D to move. Space to pause. Click / touch to shoot laser. R to restart. Survive levels, get power-ups, face the boss.</p>
+        <canvas id="game" width="900" height="620" aria-label="Advanced brick breaker game"></canvas>
+      </div>
+
+      <aside class="sidebar">
+        <div class="stat"><strong>Score:</strong> <span id="score">0</span></div>
+        <div class="stat"><strong>Lives:</strong> <span id="lives">3</span> <span id="shieldDisplay"></span></div>
+        <div class="stat"><strong>Level:</strong> <span id="level">1</span></div>
+        <div class="stat"><strong>High Score:</strong> <span id="highscore">0</span></div>
+
+        <div class="controls">
+          <button id="startBtn" class="btn">Start</button>
+          <button id="pauseBtn" class="btn">Pause</button>
+          <button id="restartBtn" class="btn">Restart</button>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3 style="margin:0 0 6px 0">Power-ups</h3>
+          <p class="small">Collect falling power-ups: Expand, Multi-ball, Slow, Laser, Shield. Some are temporary.</p>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3 style="margin:0 0 6px 0">Controls</h3>
+          <p class="small">Move: ← → or A D. Shoot laser: Click/Tap (or hold). Pause: Space. Restart: R.</p>
+        </div>
+      </aside>
+
+      <footer class="note">Like the game? Multiplayer mode, editor, and ZIP version are just a request away.</footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
